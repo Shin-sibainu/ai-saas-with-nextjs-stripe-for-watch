@@ -1,14 +1,11 @@
 //https://www.youtube.com/watch?v=Ahwoks_dawU&t=14564s
-
-import { UserButton } from "@clerk/nextjs";
+// kefiseso@fukurou.ch
+// aisaastest1225
 
 export default function Home() {
   return (
     <div>
       <p>Home</p>
-
-      {/* handshake error?  */}
-      <UserButton afterSignOutUrl="/sign-in" />
     </div>
   );
 }
