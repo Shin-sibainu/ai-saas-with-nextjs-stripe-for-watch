@@ -1,11 +1,16 @@
 import Header from "@/components/shared/Header";
 import { transformationTypes } from "@/constants";
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
+// import { auth } from "@clerk/nextjs/server";
+// import { redirect } from "next/navigation";
 import React from "react";
 
-const AddTransformationTypePage = ({ params: { type } }: SearchParamProps) => {
-  const { userId } = auth();
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const AddTransformationTypePage = ({
+  params: { type },
+}: {
+  params: { type: keyof typeof transformationTypes };
+}) => {
+  // const { userId } = auth();
   const transformation = transformationTypes[type];
 
   // if (!userId) redirect("/sign-in");
