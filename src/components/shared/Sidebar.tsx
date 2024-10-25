@@ -12,7 +12,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-72 bg-white shadow-md p-5 lg:flex hidden">
+    <aside className="w-72 bg-white shadow-md p-5 md:flex">
       <div className="flex flex-col gap-4">
         <Link href={"/"} className="flex items-center gap-2 md:py-2">
           <Image
@@ -23,7 +23,7 @@ const Sidebar = () => {
           />
         </Link>
 
-        <nav className="h-full flex-col justify-between md:flex md:gap-4">
+        <nav className="h-full flex-col justify-between flex gap-4">
           <SignedIn>
             <ul className="w-full flex-col items-start gap-2 md:flex">
               {navLinks.slice(0, 6).map((link) => {
@@ -72,6 +72,7 @@ const Sidebar = () => {
               </li>
             </ul>
           </SignedIn>
+
           <SignedOut>
             <Link href={"/sign-in"}>Login</Link>
           </SignedOut>

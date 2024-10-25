@@ -122,29 +122,29 @@ export const plans = [
 export const transformationTypes = {
   restore: {
     type: "restore",
-    title: "Restore Image",
-    subTitle: "Refine images by removing noise and imperfections",
+    title: "画像修復",
+    subTitle: "ノイズや不完全な部分を除去して画像を改善",
     config: { restore: true },
     icon: "image.svg",
   },
   removeBackground: {
     type: "removeBackground",
-    title: "Background Remove",
-    subTitle: "Removes the background of the image using AI",
+    title: "背景削除",
+    subTitle: "AIを使用して画像の背景を削除",
     config: { removeBackground: true },
     icon: "camera.svg",
   },
   fill: {
     type: "fill",
-    title: "Generative Fill",
-    subTitle: "Enhance an image's dimensions using AI outpainting",
+    title: "生成的補完",
+    subTitle: "AIのアウトペインティングで画像の寸法を拡張",
     config: { fillBackground: true },
     icon: "stars.svg",
   },
   remove: {
     type: "remove",
-    title: "Object Remove",
-    subTitle: "Identify and eliminate objects from images",
+    title: "オブジェクト削除",
+    subTitle: "画像から物体を特定して削除",
     config: {
       remove: { prompt: "", removeShadow: true, multiple: true },
     },
@@ -152,8 +152,8 @@ export const transformationTypes = {
   },
   recolor: {
     type: "recolor",
-    title: "Object Recolor",
-    subTitle: "Identify and recolor objects from the image",
+    title: "オブジェクト色変更",
+    subTitle: "画像から物体を特定して色を変更",
     config: {
       recolor: { prompt: "", to: "", multiple: true },
     },
