@@ -1,4 +1,4 @@
-import React from "react";
+export const runtime = "edge";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
