@@ -128,7 +128,7 @@ export type Database = {
           creditBalance?: number | null;
           email: string;
           firstName?: string | null;
-          id: string;
+          id?: string;
           lastName?: string | null;
           photo: string;
           planId?: number | null;
