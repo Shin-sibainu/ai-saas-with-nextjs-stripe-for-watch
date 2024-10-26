@@ -1,10 +1,12 @@
 import { Database } from "@/utils/supabase/database.types";
-import { supabase } from "@/utils/supabase/supabase";
 import { handleError } from "../utils";
+import { createClient } from "@/utils/supabase/supabase";
 
 type CreateUserParams = Database["public"]["Tables"]["users"]["Row"];
 
 export async function createUser(user: CreateUserParams) {
+  const supabase = createClient();
+
   try {
     const { data: newUser, error } = await supabase
       .from("users")
